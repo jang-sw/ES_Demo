@@ -16,9 +16,14 @@ public class ESTestService {
 	
 	public List<ESTestModel> findById(long id){
 		return this.esTestRepo.findById(id);
-	}
-	
+	}	
 	public long countAll() {
 		return this.esTestRepo.count();
+	}
+	public void deleteById(long id) {
+		this.esTestRepo.deleteById(id);
+	}
+	public void save(ESTestModel esTestModel) {
+		this.save(esTestModel);
 	}
 }
